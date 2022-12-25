@@ -7,5 +7,22 @@ theme: just-the-docs
 
 url: https://j-machacek.github.io/test/
 
+# External navigation links
+nav_external_links:
+  - title: numgeo-ACT
+    url: https://j-machacek.github.io/test/
+
+# Footer content
+# appears at the bottom of every page's main content
+footer_content: "Copyright &copy; 2021-2022 Jan Machacek. </a>"
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
 #aux_links:
 #  Template Repository: https://github.com/just-the-docs/just-the-docs-template
