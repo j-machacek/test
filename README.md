@@ -1,4 +1,4 @@
-![numgeoACT_logo_text.png](./docs/_includes/numgeoACT_logo_text.png)
+![numgeoACT_logo_text.png](./docs/images/numgeoACT_logo_text.png)
 
 ## Automatic Calibration Tool (ACT) based on the fem-program **numgeo** (Machaček & Staubach, [www.numgeo.de])
 
