@@ -2,7 +2,7 @@
 title: Home
 layout: home
 ---
-![numgeoACT_logo_text.png](./figures/numgeoACT_logo_text.png "numgeoACT_logo_text.png")
+![numgeoACT_logo_text.jpg](./images/numgeoACT_logo_text.jpg "numgeoACT_logo_text.png")
 
 ## Automatic Calibration Tool (ACT) based on the fem-program **numgeo** (Machaček & Staubach, [www.numgeo.de])
 
