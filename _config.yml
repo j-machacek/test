@@ -2,6 +2,7 @@ title: numgeo-ACT
 description: Automatic Calibration Tool (ACT) based on the fem-program numgeo (Machaček & Staubach, [www.numgeo.de])
 
 source: ./docs
+includes: ./docs/_includes
 
 theme: just-the-docs
 
