@@ -1,4 +1,8 @@
 title: numgeo-ACT
+
+# Set a path/url to a logo that will be displayed instead of the title
+#logo: "/assets/images/just-the-docs.png"
+
 description: Automatic Calibration Tool (ACT) for advanced constitutive soil models
 
 source: ./docs
@@ -11,6 +15,11 @@ url: https://j-machacek.github.io/test/
 nav_external_links:
   - title: numgeo-ACT
     url: https://j-machacek.github.io/test/
+  - title: numgeo
+    url: https://www.numgeo.de/
+
+# Enable or disable heading anchors
+heading_anchors: true
 
 # Footer content
 # appears at the bottom of every page's main content
