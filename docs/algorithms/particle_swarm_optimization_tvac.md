@@ -1,8 +1,8 @@
-    ---
+---
     layout: default
     title: Hierarchical PSO Time-Varying Acceleration (PSO-TVAC)
     parent: Optimization algorithms
-    ---
+---
 ## Hierarchical PSO Time-Varying Acceleration (PSO-TVAC)
 
 

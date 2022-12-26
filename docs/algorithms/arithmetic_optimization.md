@@ -1,8 +1,8 @@
-    ---
+---
     layout: default
     title: Gradient Based Optimization
     parent: Optimization algorithms
-    ---
+---
 ## Gradient Based Optimization
 
 Exemplarily, the results of a calibration of a hypoplastic model ($\phi_c$, $h_s$, $n$, $e_{c0}$, $e_{d0}$, $e_{i0}$, $\alpha$, $\beta$) for Karlsruhe Fine Sand (BMU-Sand) are shown by means of drained monotonic triaxial tests:

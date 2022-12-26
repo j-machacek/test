@@ -1,8 +1,8 @@
-    ---
+---
     layout: default
     title: Gradient Based Optimization
     parent: Optimization algorithms
-    ---
+---
 ## Gradient Based Optimization
 
 

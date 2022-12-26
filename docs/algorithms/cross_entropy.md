@@ -1,8 +1,8 @@
-    ---
+---
     layout: default
     title: Cross-Entropy Method
     parent: Optimization algorithms
-    ---
+---
 ## Cross-Entropy Method
 
 The Cross-Entropy Method (CEM) is a probabilistic optimization belonging to the field of Stochastic Optimization. It was developed as an efficient estimation technique for rare-event probabilities in discrete event simulation systems by Rubinstein in 1997 [1] and was adapted for use in optimization. Detailed introduction in CEM is given in [2].
