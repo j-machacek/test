@@ -21,6 +21,10 @@ nav_external_links:
 # Enable or disable heading anchors
 heading_anchors: true
 
+# Sort order for navigation links
+# nav_sort: case_insensitive # default, equivalent to nil
+nav_sort: case_sensitive
+
 # Footer content
 # appears at the bottom of every page's main content
 footer_content: "Copyright &copy; 2021-2022 Jan Machacek. </a>"
