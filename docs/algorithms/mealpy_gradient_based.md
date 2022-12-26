@@ -1,7 +1,7 @@
 ---
     layout: default
     title: Gradient Based Optimization
-    parent: Optimization algorithms
+    parent: MEALPY
 ---
 ## Gradient Based Optimization
 

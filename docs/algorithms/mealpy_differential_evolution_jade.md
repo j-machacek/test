@@ -1,10 +1,18 @@
 ---
     layout: default
     title: Differential Evolution - JADE
-    parent: Optimization algorithms
+    parent: MEALPY
 ---
 ## Differential Evolution - JADE
 A modification of the classical differential evolution (DE) algorithm. JADE, was proposed by Zhang et al. [1] to improve optimization performance by implementing a new mutation strategy with optional external archive and updating control parameters in an adaptive manner. The parameter adaptation automatically updates the control parameters to appropriate values and avoids a user's prior knowledge of the relationship between the parameter settings and the characteristics of optimization problems. 
+
+### Usage
+The Differential Evolution optimization algorithm is accessible via the mealpy library using the following command:
+```python
+ACTmealpy.optimize(maxiter=100, n_cpu=32, method='DifferentialEvolution-JADE')
+```
+
+### Example
 
 Exemplarily, the results of a calibration of a hypoplastic model ($\varphi_c$, $h_s$, $n$, $e_{c0}$, $e_{d0}$, $e_{i0}$, $\alpha$, $\beta$) for Karlsruhe Fine Sand (BMU-Sand) are shown by means of drained monotonic triaxial tests:
 
@@ -26,53 +34,6 @@ The influence of the scatter in the costfunction on the simulation outcome is sh
 
 <img src="./jade/triaxCD_all.png" alt="triaxCD_all" width="66%"/>
 
-
-
-### Example
-```python
-import numpy as np
-import sys,os
-  
-import ACT.globals as ACTglobals
-import ACT.mealpy as ACTmealpy
-import ACT.excel as ACTexcel
-import ACT.weights as ACTweights
-
-# Load python library for the calibration
-from ACT.hypoplasticity import hypoplasticity
-from ACT.sanisand import sanisand
-
-# Read in data
-excelfile = './Database_BMU_Sand.xlsx'
-exp_oedometer, exp_triaxCD, exp_triax_CUcyc = ACTexcel.collect(excelfile)
-
- # empty the cyclic triaxial tests, we only want to calibrate the "monotonic" parameters
-exp_triax_CUcyc = []
-
-# smoothen the data...
-for oedo in exp_oedometer:
-    oedo.interpolate(N=50)
-
-for triax in exp_triaxCD:
-    triax.interpolate(N=50)
-
-# Start optimization
-hypo = hypoplasticity()
-hypo.set(ec=1.054, ed=0.677, ei=1.15, phic=33.1/180*np.pi, alpha=0.14, beta=2.5, R=1e-4, mT=1., mR=1.)
-
-to_optimize = ['hs','n']
-
-ACTglobals.setup(
-  Model = hypo,
-  Free_parameter = to_optimize,
-  oedometer = exp_oedometer,
-  triaxCD = exp_triaxCD,
-  triaxCUcyc = exp_triax_CUcyc,
-  Similarity = 'frechet',
-  path = os.getcwd())
-
-ACTmealpy.optimize(maxiter=100, n_cpu=4, method='DifferentialEvolution-JADE')
-```
 
 ### References
 [1] J. Zhang and A. C. Sanderson, "JADE: Adaptive Differential Evolution With Optional External Archive," in _IEEE Transactions on Evolutionary Computation_, vol. 13, no. 5, pp. 945-958, Oct. 2009, doi:10.1109/TEVC.2009.2014613. [[https://ieeexplore.ieee.org/document/5208221]]

@@ -1,30 +1,30 @@
 ---
     layout: default
-    title: Comprehensive Learning Particle Swarm Optimization (PSO-CL)
-    parent: Optimization algorithms
+    title: Genetic Algorithm
+    parent: MEALPY
 ---
-## Comprehensive Learning Particle Swarm Optimization (PSO-CL)
+## Genetic Algorithm
 
 
 Exemplarily, the results of a calibration of a hypoplastic model ($\phi_c$, $h_s$, $n$, $e_{c0}$, $e_{d0}$, $e_{i0}$, $\alpha$, $\beta$) for Karlsruhe Fine Sand (BMU-Sand) are shown by means of drained monotonic triaxial tests:
 
-<img src="./pso_cl/triaxCD.png" alt="triaxCD" width="66%"/>
+<img src="./ga/triaxCD.png" alt="triaxCD" width="66%"/>
 
 and oedometric compression tests:
 
-<img src="./pso_cl/oedometer.png" alt="oedometer" width="33%"/>
+<img src="./ga/oedometer.png" alt="oedometer" width="33%"/>
 
 The development of the global and local cost function is shown in the figure below. It can be seen that the value of the cost function stagnates over 15 iterations. This was defined as a termination criterion for the optimization.
 
-<img src="./pso_cl/fitness_function.png" alt="fitness_function" width="66%"/>
+<img src="./ga/fitness_function.png" alt="fitness_function" width="66%"/>
 
 To get an (incomplete) impression about the reproducibility of the results, we repeat the calibration five times. The achieved values of the cost function as well as the required computing time per run (2x AMD Ryzen Threadripper PRO 3955WX 16-Cores, 3900 MHz, WSL2) are shown below.
 
-<img src="./pso_cl/statistics.png" alt="statistics" width="66%"/>
+<img src="./ga/statistics.png" alt="statistics" width="66%"/>
 
 The influence of the scatter in the costfunction on the simulation outcome is shown below (from large variations in cost functions, large variations in simulation results are expected):
 
-<img src="./pso_cl/triaxCD_all.png" alt="triaxCD_all" width="66%"/>
+<img src="./ga/triaxCD_all.png" alt="triaxCD_all" width="66%"/>
 
 ### Example
 ```python
@@ -69,7 +69,7 @@ ACTglobals.setup(
   Similarity = 'frechet',
   path = os.getcwd())
 
-ACTmealpy.optimize(maxiter=100, n_cpu=4, method='ParticleSwarmOptimization-CL')
+ACTmealpy.optimize(maxiter=100, n_cpu=4, method='GeneticAlgorithm')
 ```
 
 ### References

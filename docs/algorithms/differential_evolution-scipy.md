@@ -1,7 +1,7 @@
 ---
     layout: default
     title: Differential Evolution - scipy (classical)
-    parent: Optimization algorithms
+    parent: MEALPY
 ---
 ## Differential Evolution - scipy (classical)
 
