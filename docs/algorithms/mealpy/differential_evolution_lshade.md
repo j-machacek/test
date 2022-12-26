@@ -2,6 +2,7 @@
     layout: default
     title: Differential Evolution - LSHADE
     parent: MEALPY
+    grand_parent: Optimization algorithms
 ---
 ## Differential Evolution - LSHADE
 

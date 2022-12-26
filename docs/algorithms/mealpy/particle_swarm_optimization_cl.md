@@ -2,6 +2,7 @@
     layout: default
     title: Comprehensive Learning Particle Swarm Optimization (PSO-CL)
     parent: MEALPY
+    grand_parent: Optimization algorithms
 ---
 ## Comprehensive Learning Particle Swarm Optimization (PSO-CL)
 

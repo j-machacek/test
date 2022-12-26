@@ -2,6 +2,7 @@
     layout: default
     title: Differential Evolution (classical)
     parent: MEALPY
+    grand_parent: Optimization algorithms
 ---
 ## Differential Evolution (classical)
 

@@ -2,6 +2,7 @@
     layout: default
     title: Cross-Entropy Method
     parent: MEALPY
+    grand_parent: Optimization algorithms
 ---
 ## Cross-Entropy Method
 

@@ -2,6 +2,7 @@
     layout: default
     title: Genetic Algorithm
     parent: MEALPY
+    grand_parent: Optimization algorithms
 ---
 ## Genetic Algorithm
 
