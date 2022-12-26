@@ -2,7 +2,6 @@
     layout: default
     title: Cross-Entropy Method
     parent: Optimization algorithms
-    nav_order: 2
     ---
 ## Cross-Entropy Method
 

@@ -2,7 +2,6 @@
     layout: default
     title: Comprehensive Learning Particle Swarm Optimization (PSO-CL)
     parent: Optimization algorithms
-    nav_order: 2
     ---
 ## Comprehensive Learning Particle Swarm Optimization (PSO-CL)
 

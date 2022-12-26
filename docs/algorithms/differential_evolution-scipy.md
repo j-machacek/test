@@ -2,7 +2,6 @@
     layout: default
     title: Differential Evolution - scipy (classical)
     parent: Optimization algorithms
-    nav_order: 2
     ---
 ## Differential Evolution - scipy (classical)
 

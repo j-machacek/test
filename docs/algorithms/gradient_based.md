@@ -2,7 +2,6 @@
     layout: default
     title: Gradient Based Optimization
     parent: Optimization algorithms
-    nav_order: 2
     ---
 ## Gradient Based Optimization
 

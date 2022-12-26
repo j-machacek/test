@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
 ![numgeoACT_logo_text.jpg](./images/numgeoACT_logo_text.jpg "numgeoACT_logo_text.png")
 

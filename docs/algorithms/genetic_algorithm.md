@@ -2,7 +2,6 @@
     layout: default
     title: Genetic Algorithm
     parent: Optimization algorithms
-    nav_order: 2
     ---
 ## Genetic Algorithm
 
