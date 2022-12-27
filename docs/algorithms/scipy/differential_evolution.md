@@ -18,11 +18,6 @@ To start the optimization, call the `optimize` function:
 ```python
 ACTscipy.optimize(maxiter=500, n_cpu=32, popsize=20, method='DifferentialEvolution')
 ```
-Arguments of the function are:
-* `maxiter`: maximum number of iterations performed during optimization. After `maxiter` iterations, the optimization is terminated regardless of whether the required accuracy has been achieved or not. The default value is `maxiter=200` .
-* `n_cpu`: number of threads to be used during optimization. The default value is `n_cpu=1`.
-* `popsize`: multiplier for setting the total population size. The population size is calculated as the next power of 2 after `popsize * N`. The default value is `popsize=15` . 
-* `method='DifferentialEvolution'`. Do not change.
 
 ### Example
 Exemplarily, the results of a calibration of a hypoplastic model ($\phi_c$, $h_s$, $n$, $e_{c0}$, $e_{d0}$, $e_{i0}$, $\alpha$, $\beta$) for Karlsruhe Fine Sand (BMU-Sand) are shown by means of drained monotonic triaxial tests:
