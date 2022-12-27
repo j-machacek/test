@@ -6,7 +6,7 @@
 ---
 ## Differential Evolution (classical)
 
-Differential evolution (DE), proposed by Storn and Price [1], is a population-based metaheuristic search algorithm that optimizes a problem by iteratively improving a candidate solution based on an evolutionary process.
+Differential Evolution (DE), proposed by Storn and Price [1], is a population-based metaheuristic search algorithm that optimizes a problem by iteratively improving a candidate solution based on an evolutionary process.
 
 ### Usage
 The Differential Evolution optimization algorithm is accessible via the mealpy library using the following command:

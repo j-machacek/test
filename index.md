@@ -5,7 +5,8 @@ nav_order: 0
 ---
 ![numgeoACT_logo_text.jpg](./docs/images/numgeoACT_logo_text.jpg "numgeoACT_logo_text.png")
 
-Copyright (C) 2021-2022 Jan Machaček, jan-machacek@outlook.com, jan.machacek@tu-darmstadt.de 
+Copyright (C) 2021-2022 Jan Machaček
+[[jan-machacek@outlook.com]], [[jan.machacek@tu-darmstadt.de]]
 
 # Automatic Calibration of advanced constitutive soil models
 

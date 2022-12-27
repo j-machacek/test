@@ -28,7 +28,9 @@ The interface has five optional arguments:
 * `exit_iter`: Early stoppage criterion. If the global best solution not better an epsilon after `exit_iter` iterations then stop the optimization. Default is `exit_iter=30`
 * `popsize`: Population size defined as the next power to two of `N*popsize`, where `N` is the dimensionality of the problem (= number of parameters of the constitutive model to be optimized). Default is `popsize=15`.
 * `method` : Optimization algorithm to be used. Currently the following algorithms are:
-    * 
+    * `DifferentialEvolution`, see [[differential_evolution]] Differential Evolution
+    * `DifferentialEvolution-JADE`, see [[differential_evolution_jade]] Differential Evolution - JADE
+    * `DifferentialEvolution-LSHADE`, see [[differential_evolution_lshade]] Differential Evolution - LSHADE
 
 {:toc}
 
