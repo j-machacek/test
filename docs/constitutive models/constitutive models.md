@@ -6,6 +6,5 @@
     permalink: /docs/constitutive models
 ---
 # Constitutive models
-
-- TOC
+{: .no_toc }
 {:toc}
