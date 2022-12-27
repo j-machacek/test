@@ -7,4 +7,5 @@
 ---
 # Optimization algorithms
 
+- TOC
 {:toc}
