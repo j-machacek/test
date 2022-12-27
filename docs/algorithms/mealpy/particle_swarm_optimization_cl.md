@@ -1,11 +1,11 @@
 ---
     layout: default
-    title: Comprehensive Learning Particle Swarm Optimization (PSO-CL)
+    title: Particle Swarm Optimization - Comprehensive Learning (PSO-CL)
     parent: MEALPY
     grand_parent: Optimization algorithms
     katex: true
 ---
-## Comprehensive Learning Particle Swarm Optimization (PSO-CL)
+## Particle Swarm Optimization - Comprehensive Learning (PSO-CL)
 
 
 Exemplarily, the results of a calibration of a hypoplastic model ($\phi_c$, $h_s$, $n$, $e_{c0}$, $e_{d0}$, $e_{i0}$, $\alpha$, $\beta$) for Karlsruhe Fine Sand (BMU-Sand) are shown by means of drained monotonic triaxial tests:

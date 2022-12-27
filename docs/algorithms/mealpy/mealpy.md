@@ -31,8 +31,7 @@ The interface has five optional arguments:
     * `DifferentialEvolution`, see [Differential Evolution]({% link docs/algorithms/mealpy/differential_evolution.md%})
     * `DifferentialEvolution-JADE`, see [Differential Evolution - JADE]({% link docs/algorithms/mealpy/differential_evolution_jade.md%})
     * `DifferentialEvolution-LSHADE`, see [Differential Evolution - LSHADE]({% link docs/algorithms/mealpy/differential_evolution_lshade.md%})
-
-{:toc}
+    * * `ParticleSwarmOptimization-CL`, see [Particle Swarm Optimization - Comprehensive Learning]({% link docs/algorithms/mealpy/particle_swarm_optimization_cl.md%})
 
 ### References
 [1] N. V. Thieu and S. Mirjalili, ‘MEALPY: a framework of the state-of-the-art meta-heuristic algorithms in python’. Zenodo, Jun. 2022. doi: [10.5281/zenodo.6684223](https://doi.org/10.5281/zenodo.6684223).
