@@ -3,6 +3,7 @@
     title: Differential Evolution - JADE
     parent: MEALPY
     grand_parent: Optimization algorithms
+    katex: true
 ---
 ## Differential Evolution - JADE
 A modification of the classical differential evolution (DE) algorithm. JADE, was proposed by Zhang et al. [1] to improve optimization performance by implementing a new mutation strategy with optional external archive and updating control parameters in an adaptive manner. The parameter adaptation automatically updates the control parameters to appropriate values and avoids a user's prior knowledge of the relationship between the parameter settings and the characteristics of optimization problems. 

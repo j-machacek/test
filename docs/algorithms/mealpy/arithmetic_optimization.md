@@ -3,6 +3,7 @@
     title: Gradient Based Optimization
     parent: MEALPY
     grand_parent: Optimization algorithms
+    katex: true
 ---
 ## Gradient Based Optimization
 

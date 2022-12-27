@@ -3,6 +3,7 @@
     title: Comprehensive Learning Particle Swarm Optimization (PSO-CL)
     parent: MEALPY
     grand_parent: Optimization algorithms
+    katex: true
 ---
 ## Comprehensive Learning Particle Swarm Optimization (PSO-CL)
 

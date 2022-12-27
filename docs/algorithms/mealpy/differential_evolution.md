@@ -3,6 +3,7 @@
     title: Differential Evolution
     parent: MEALPY
     grand_parent: Optimization algorithms
+    katex: true
 ---
 ## Differential Evolution
 

@@ -3,6 +3,7 @@
     title: Hierarchical PSO Time-Varying Acceleration (PSO-TVAC)
     parent: MEALPY
     grand_parent: Optimization algorithms
+    katex: true
 ---
 ## Hierarchical PSO Time-Varying Acceleration (PSO-TVAC)
 

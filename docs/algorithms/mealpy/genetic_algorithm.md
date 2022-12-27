@@ -3,6 +3,7 @@
     title: Genetic Algorithm
     parent: MEALPY
     grand_parent: Optimization algorithms
+    katex: true
 ---
 ## Genetic Algorithm
 
