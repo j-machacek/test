@@ -13,7 +13,7 @@ The information processing strategy of the algorithm is to sample the problem sp
 ### Usage
 The Cross-Entropy Method algorithm is accessible via the mealpy library using the following command:
 ```python
-ACTmealpy.optimize(maxiter=300, n_cpu=32, method='Cross-Entropy')
+ACTmealpy.optimize(maxiter=300, n_cpu=32, method='CrossEntropy')
 ```
 ### Example
 Exemplarily, the results of a calibration of a hypoplastic model ($\phi_c$, $h_s$, $n$, $e_{c0}$, $e_{d0}$, $e_{i0}$, $\alpha$, $\beta$) for Karlsruhe Fine Sand (BMU-Sand) are shown by means of drained monotonic triaxial tests:

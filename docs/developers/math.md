@@ -11,8 +11,7 @@ Per default the `kramdown` parser used by `Jekyll` does not allow for inline mat
 
 ```
 {% if page.katex %}
-```
-```html
+
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
 
@@ -27,8 +26,7 @@ Per default the `kramdown` parser used by `Jekyll` does not allow for inline mat
       { left: '\\(', right: '\\)', display: false }
   ]});">
 </script>
-```
-```
+
 {% endif %}
 ```
 2) To use LaTeX in a post, add `katex: true` to the YAML front matter, and write your LaTeX within the specified delimiters `$...$` or `\(...\)`. For instance, the body of the following:
