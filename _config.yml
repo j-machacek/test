@@ -9,8 +9,6 @@ theme: just-the-docs
 
 url: https://j-machacek.github.io/test/
 
-markdown: GFM # kramdown
-
 # External navigation links
 nav_external_links:
   - title: numgeo-ACT
