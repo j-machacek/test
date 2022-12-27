@@ -9,8 +9,9 @@ Per default the `kramdown` parser used by `Jekyll` does not allow for inline mat
 
 1) Add the following conditional load stylesheets and scripts to the *head_custom.html* file:
 
-`{% if page.katex %}`
 ```html
+IF CLAUSE
+
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
 
@@ -25,7 +26,11 @@ Per default the `kramdown` parser used by `Jekyll` does not allow for inline mat
       { left: '\\(', right: '\\)', display: false }
   ]});">
 </script>
+
+END IF CLAUSE
 ```
+where `IF CLAUSE` = {% if page.katex %} and `END IF CLAUSE` = {% endif %}
+
 2) To use LaTeX in a post, add `katex: true` to the YAML front matter, and write your LaTeX within the specified delimiters `$...$` or `\(...\)`. For instance, the body of the following:
 
 ```yaml
