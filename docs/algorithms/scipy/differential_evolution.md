@@ -2,6 +2,7 @@
     layout: default
     title: Differential Evolution
     parent: SciPy
+    grand_parent: Optimization algorithms
 ---
 ## Differential Evolution
 
