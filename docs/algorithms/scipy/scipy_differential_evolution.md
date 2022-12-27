@@ -1,10 +1,10 @@
 ---
     layout: default
-    title: Differential Evolution
+    title: Differential Evolution (SciPy)
     parent: SciPy
     grand_parent: Optimization algorithms
 ---
-## Differential Evolution
+## Differential Evolution (SciPy)
 
 Differential evolution (DE), proposed by Storn and Price [1], is a population-based metaheuristic search algorithm that optimizes a problem by iteratively improving a candidate solution based on an evolutionary process.
 
