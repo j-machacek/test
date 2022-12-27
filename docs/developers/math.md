@@ -31,11 +31,11 @@ END IF CLAUSE
 ```
 where:
 ```text
-IF CLAUSE = {% if page.katex %}
+IF CLAUSE = { % if page.katex % }
 ```
 and 
 ```text
-END IF CLAUSE = {% endif %}
+END IF CLAUSE = { % endif % }
 ```
 
 2) To use LaTeX in a post, add `katex: true` to the YAML front matter, and write your LaTeX within the specified delimiters `$...$` or `\(...\)`. For instance, the body of the following:
