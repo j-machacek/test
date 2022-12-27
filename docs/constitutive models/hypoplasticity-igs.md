@@ -2,6 +2,7 @@
     layout: default
     title: Hypoplasticity + Intergranular Strain (Hypo+IGS)
     parent: Constitutive models
+    katex: true
 ---
 # Hypoplasticity + Intergranular Strain (Hypo+IGS)
 
