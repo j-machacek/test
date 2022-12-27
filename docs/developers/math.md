@@ -9,6 +9,7 @@ Per default the `kramdown` parser used by `Jekyll` does not allow for inline mat
 
 1) Add the following conditional load stylesheets and scripts to the *head_custom.html* file:
 
+`{% if page.katex %}`
 ```html
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
