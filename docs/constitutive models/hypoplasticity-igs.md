@@ -5,10 +5,11 @@
     katex: true
 ---
 # Hypoplasticity + Intergranular Strain (Hypo+IGS)
+{:toc}
 
 Hypoplastic model for sands, von Wolffersdorff version [1] with InterGranular Strain (IGS) extension by Niemunis and Herle [2]. For details on the implementation see [3].
 
-### Parameters
+## Parameters
 * $\nu$ - key: `nu` - if ommited the basic hypoplastic model of *von Wolffersdorff* is recovered
 * $\varphi_c$ - key: `phic` - provided in rad.
 * $h_s$ - key: `hs` - provided in GPa
@@ -19,7 +20,7 @@ Hypoplastic model for sands, von Wolffersdorff version [1] with InterGranular St
 * $e_{d0}$ - key: `ed`
 * $f_{ei} = e_{i0}/e_{c0}$  - key: `ei` - typically in the range of 1.15 - 1.2
 
-### Bounds
+## Bounds
 The default values for the bounds are:
 * $0.0 \leq \nu \leq 0.4$ 
 * $0.9 \varphi_{c0} \leq \varphi_c \leq 1.1\varphi_{c0}$, where $\varphi_{c0}$ is a value submitted by the user
@@ -31,12 +32,12 @@ The default values for the bounds are:
 * $0.9 e_{d00} \leq e_{d0} \leq 1.1e_{d00}$, where $e_{d00}$ is a value submitted by the user
 * $f_{ei} = e_{i0}/e_{c0}$ - typically in the range of 1.15 - 1.2
 
-### Notes
+## Notes
 * By setting $m_R=m_T=1$ the IGS extension is deactivated and the original hypoplastic model is recovered.
 * The Poisson's ratio $\nu$ is a modification of the original formulation introduced by A. Niemunis [4] to have more flexibility in fitting the inclination of the first loading cycle in $p-q$ space in cyclic triaxial tests. By setting $\nu=0$, the original von Wolffersdorff version is recovered.
 * The reference values $\varphi_{c0}, e_{c00}$ and $e_{d00}$ are usually chosen as the angle of repose, the maximum void ratio $e_{max}$ and minimum void ratio $e_{min}$ obtained from laboratory tests, respectively.
   
-### Example
+## Example
 ```python
 import numpy as np
 import sys,os
@@ -84,7 +85,7 @@ ACTglobals.setup(
 ACTmealpy.optimize(maxiter=200, n_cpu=4, method='DifferentialEvolution')
 ```
 
-### References
+## References
 [1] P.-A. von Wolffersdorff, ‘A hypoplastic relation for granular materials with a predefined limit state surface’, _Mechanics of Cohesive-frictional Materials_, vol. 1, no. 3, pp. 251–271, 1996, doi: [10.1002/(SICI)1099-1484(199607)1:3&lt;251::AID-CFM13&gt;3.0.CO;2-3](https://doi.org/10.1002/%28SICI%291099-1484%28199607%291:3<251::AID-CFM13>3.0.CO;2-3).
 
 [2] A. Niemunis and I. Herle, ‘Hypoplastic model for cohesionless soils with elastic strain range’, _Mechanics of Cohesive-frictional Materials_, vol. 2, no. 4, pp. 279–299, 1997, doi: [10.1002/(SICI)1099-1484(199710)2:4&lt;279::AID-CFM29&gt;3.0.CO;2-8](https://doi.org/10.1002/%28SICI%291099-1484%28199710%292:4<279::AID-CFM29>3.0.CO;2-8).

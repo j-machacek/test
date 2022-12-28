@@ -5,19 +5,19 @@
     katex: true
 ---
 # Intergranular Strain Anisotropy (ISA)
+{:toc}
 
 
+## Parameters
 
-### Parameters
-
-### Bounds
+## Bounds
 
 
-### Notes
+## Notes
 
   
-### Example
+## Example
 
 
-### References
+## References
 
