@@ -5,39 +5,41 @@
 ---
 # Color scheme
 
-Per default [Just the docs]({% link https://just-the-docs.github.io/just-the-docs %}) uses its `lihght` scheme relying on purple and grey scales for displaying content. In order to adopt the coloring of 
+Per default [Just the docs]({% link https://just-the-docs.github.io/just-the-docs %}) uses its `lihght` scheme relying on purple and grey scales for displaying content. In order to adopt the colouring of **numgeo-ACT** we changed the default settings. If this needs to be repeated or adjustments are required, these are the necessary steps: 
 
-1) Add the following conditional load stylesheets and scripts to the *head_custom.html* file:
+1) Add the directory *_sass* to the main directory of the project
+2) Add the subdirectory *color_schemes*
+3) Create a new file named *numgeoACT_light.css* in *color_schemes* with the following content:
 
-```html
-{ % if page.katex % }
+```css 
+// Background
+$body-background-color: #ffffff;
+$sidebar-color: $grey-lt-100;
+$search-background-color: $grey-lt-100;
 
-<!-- CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
+// Lines
+$border-color: $grey-lt-100;
 
-<!-- JavaScript -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{
-    delimiters: [
-      { left: '$$',  right: '$$',  display: true  },
-      { left: '$',   right: '$',   display: false },
-      { left: '\\[', right: '\\]', display: true  },
-      { left: '\\(', right: '\\)', display: false }
-  ]});">
-</script>
+// Text
+$body-text-color: $grey-dk-100;
+$body-heading-color: $grey-dk-200;
+$nav-child-link-color: $grey-dk-100;
+$search-result-preview-color: $grey-dk-100;
 
-{ % endif % }
-```
-Note that the blanks between `%` and the brackets `{`, `}` in `{ % if page.katex % }`  and `{ % endif % }` must be removed!
+//$link-color: darken($red-300, 10%);
+$link-color: rgb(150,28,68,100);
 
-2) To use LaTeX in a post, add `katex: true` to the YAML front matter, and write your LaTeX within the specified delimiters `$...$` or `\(...\)`. For instance, the body of the following:
+// Buttons
+// $btn-primary-color: darken($red-300, 10%);
+$btn-primary-color: rgb(150,28,68,100);
+$base-button-color: $grey-lt-000;
 
-```yaml
----
-    layout: default
-    title: Hypoplasticity + Intergranular Strain (Hypo+IGS)
-    parent: Constitutive models
-    katex: true
----
+// Tables
+$table-background-color: $grey-lt-000;
+$feedback-color: darken($sidebar-color, 3%);
+
+@import   "./color_schemes/light";
+
+// Code
+$code-background-color: $grey-lt-100;
 ```
