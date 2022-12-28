@@ -7,6 +7,7 @@
     permalink: /docs/mealpy/mealpy
 ---
 # MEALPY
+{: .no_toc }
 
 [MEALPY](https://github.com/thieu1995/mealpy.git) [1] is a Python library for the most of cutting-edge population *meta-heuristic* algorithms - a field which provides an fast and efficient way to find the global optimal point of mathematical optimization problems.
 
