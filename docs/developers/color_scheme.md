@@ -38,5 +38,5 @@ $feedback-color: darken($sidebar-color, 3%);
 @import   "./color_schemes/light";
 
 // Code
-$code-background-color: $grey-lt-100;
+$code-background-color: $grey-lt-000;
 ```
