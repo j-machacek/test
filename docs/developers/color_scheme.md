@@ -8,7 +8,9 @@
 Per default [Just the docs](https://just-the-docs.github.io/just-the-docs) uses its `light` scheme relying on purple and grey scales for displaying content. In order to adopt the colouring of **numgeo-ACT** we changed the default settings. If this needs to be repeated or adjustments are required, these are the necessary steps: 
 
 1) Add the directory *_sass* to the main directory of the project 
+
 2) Add the subdirectory *color_schemes*  
+
 3) Create a new file named *numgeoACT_light.css* in *color_schemes* with the following content: 
 
 ```css 
