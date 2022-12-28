@@ -6,6 +6,11 @@
 ---
 # Hypoplasticity + Intergranular Strain (Hypo+IGS)
 {: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
 {:toc}
 
 Hypoplastic model for sands, von Wolffersdorff version [1] with InterGranular Strain (IGS) extension by Niemunis and Herle [2]. For details on the implementation see [3].
