@@ -36,7 +36,7 @@ The interface has five optional arguments:
     * `GeneticAlgorithm`, see [Genetic Algorithm]({% link docs/algorithms/mealpy/genetic_algorithm.md%})
     * `GradientBased`, see [Gradient Based Optimization]({% link docs/algorithms/mealpy/gradient_based.md%})
     * `ParticleSwarmOptimization-CL`, see [Particle Swarm Optimization - Comprehensive Learning]({% link docs/algorithms/mealpy/particle_swarm_optimization_cl.md%})
-    * `ParticleSwarmOptimization-TVAC`, see [Particle Swarm Optimization Hierarchical Time-Varying Acceleration]({% link docs/algorithms/mealpy/particle_swarm_optimization_tvac%})
+    * `ParticleSwarmOptimization-TVAC`, see [Particle Swarm Optimization Hierarchical Time-Varying Acceleration]({% link docs/algorithms/mealpy/particle_swarm_optimization_tvac.md %})
     
 
 ### References
