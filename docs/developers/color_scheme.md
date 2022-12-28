@@ -25,10 +25,10 @@ $body-text-color: $grey-dk-100;
 $body-heading-color: $grey-dk-200;
 $nav-child-link-color: $grey-dk-100;
 $search-result-preview-color: $grey-dk-100;
-$link-color: rgb(150,28,68,100);
+$link-color: rgb(150,28,68);
 
 // Buttons
-$btn-primary-color: rgb(150,28,68,100);
+$btn-primary-color: rgb(150,28,68);
 $base-button-color: $grey-lt-000;
 
 // Tables
