@@ -5,7 +5,7 @@ nav_order: 0
 ---
 ![numgeoACT_logo_text.jpg](./docs/images/numgeoACT_logo_text.jpg "numgeoACT_logo_text.png")
 
-Copyright (C) 2021-2022 Jan Machaček, jan-machacek@outlook.com, jan.machacek@tu-darmstadt.de 
+Copyright (C) 2021-2022 Jan Machaček, <jan-machacek@outlook.com>, <jan.machacek@tu-darmstadt.de> 
 
 # Automatic Calibration of advanced constitutive soil models
 
@@ -14,4 +14,4 @@ The numgeo Automatic Calibration Tool(set) (numgeo-ACT) aims to simplify and spe
 ![ACT_iteration_simulation_small.gif](./docs/images/ACT_iteration_simulation_small.gif)
 
 ## Availability
-numgeo-ACT is currently not yet freely available, but is planned for the medium term. In the meantime, we are happy to perform the calibration for you using the ACT – free of charge, of course. If you are interested, please contact Jan Machaček (jan-machacek@outlook.com, jan.machacek@tu-darmstadt.de).
+numgeo-ACT is currently not yet freely available, but is planned for the medium term. In the meantime, we are happy to perform the calibration for you using the ACT – free of charge, of course. If you are interested, please contact Jan Machaček (<jan-machacek@outlook.com>, <jan.machacek@tu-darmstadt.de>).
