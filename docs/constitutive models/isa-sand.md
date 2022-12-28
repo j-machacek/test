@@ -16,7 +16,9 @@
 ## Notes
 
   
-## Example
+## Usage
+
+## Constitutive Equations
 
 
 ## References
