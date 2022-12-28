@@ -5,6 +5,11 @@
     katex: true
 ---
 # SANISAND
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+1. TOC
 {:toc}
 
 ## Parameters
@@ -53,7 +58,7 @@ model.estimate_e0_lambda_xi(triax_CU=excel.triax_CU)
 ```
 where `triax_CU` requires a list of experimental results of undrained triaxial tests stored in the class `triax_CU`. The result of this function call is printed in the file *e_p_lambdac.pdf* in the *results* directory. An example is given in the following:
 
-![e_p_lambdac.png](./images/e_p_lambdac.png)
+<img src="./images/e_p_lambdac.png" alt="e_p_lambdac" width="66%"/>
 
 ## Constitutive Equations
 
