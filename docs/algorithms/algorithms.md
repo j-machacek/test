@@ -7,7 +7,7 @@
 ---
 # Optimization algorithms
 
-Since the calibration of advanced fabric models is a major challenge, we have implemented interfaces to a variety of optimization algorithms from different libraries.
+Due to the many parameters of advanced constitutive models, their calibration is a major challenge. To address this, we have implemented interfaces to a variety of optimization algorithms from different libraries.
 
 {: .no_toc }
 {:toc}
