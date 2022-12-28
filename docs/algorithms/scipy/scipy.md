@@ -5,6 +5,7 @@
     parent: Optimization algorithms
     has_children: true
     permalink: /docs/scipy/scipy
+    has_toc: false
 ---
 # SciPy
 

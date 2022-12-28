@@ -3,6 +3,7 @@
     title: Cross-Entropy Method
     parent: MEALPY
     grand_parent: Optimization algorithms
+    nav_order: 2
     katex: true
 ---
 ## Cross-Entropy Method

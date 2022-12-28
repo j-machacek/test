@@ -3,6 +3,7 @@
     title: Arithmetic Optimization
     parent: MEALPY
     grand_parent: Optimization algorithms
+    nav_order: 1
     katex: true
 ---
 ## Arithmetic Optimization

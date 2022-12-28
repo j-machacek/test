@@ -5,6 +5,7 @@
     parent: Optimization algorithms
     has_children: true
     permalink: /docs/mealpy/mealpy
+    has_toc: false
 ---
 # MEALPY
 {: .no_toc }
