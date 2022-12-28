@@ -86,7 +86,7 @@ We have now successfully set up the hypoplatic constitutive model for optimizati
 
 ## Constitutive Equations
 
-The basic hypoplastic model of von Wolfersdorff \cite{Wolffersdorff1996} interrelates the Jaumann stress rate $\boldsymbol{\mathring{\sigma}}$ with the strain rate $\boldsymbol{\dot{\varepsilon}}$:
+The basic hypoplastic model of von Wolfersdorff [1] interrelates the Jaumann stress rate $\boldsymbol{\mathring{\sigma}}$ with the strain rate $\boldsymbol{\dot{\varepsilon}}$:
 
 $$
 \boldsymbol{\mathring{\sigma}} = \mathsf{L}:\boldsymbol{\dot{\varepsilon}} + \boldsymbol{N} ~\|\boldsymbol{\dot{\varepsilon}\|} 
