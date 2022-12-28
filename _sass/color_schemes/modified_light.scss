@@ -1,15 +1,15 @@
-$body-background-color: $grey-lt-000;
-$sidebar-color: $grey-lt-100;
-$border-color: $grey-lt-200;
+$body-background-color: #ffffff;
+$sidebar-color: $grey-lt-000;
+$border-color: $grey-lt-100;
 $body-text-color: $grey-dk-000;
 $body-heading-color: $grey-dk-100;
 $nav-child-link-color: $grey-dk-000;
 $search-result-preview-color: $grey-dk-000;
-$link-color: $red-300;
-$btn-primary-color: $red-300;
+$link-color: darken($red-300, 10%);
+$btn-primary-color: darken($red-300, 10%);
 $base-button-color: $grey-lt-000;
 $search-background-color: $grey-lt-000;
-$table-background-color: $grey-lt-100;
+$table-background-color: $grey-lt-000;
 $feedback-color: darken($sidebar-color, 3%);
 
 @import "./vendor/OneDarkJekyll/syntax-one-dark-vivid";
