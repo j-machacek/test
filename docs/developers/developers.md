@@ -6,6 +6,5 @@
     permalink: /docs/developers
 ---
 # For developers
-
-- TOC
+{: .no_toc }
 {:toc}
