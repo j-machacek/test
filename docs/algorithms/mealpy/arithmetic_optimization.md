@@ -1,11 +1,11 @@
 ---
     layout: default
-    title: Gradient Based Optimization
+    title: Arithmetic Optimization
     parent: MEALPY
     grand_parent: Optimization algorithms
     katex: true
 ---
-## Gradient Based Optimization
+## Arithmetic Optimization
 
 ### Usage
 The Arithmetic optimization algorithm is accessible via the mealpy library using the following command:
