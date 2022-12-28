@@ -25,12 +25,9 @@ $body-text-color: $grey-dk-100;
 $body-heading-color: $grey-dk-200;
 $nav-child-link-color: $grey-dk-100;
 $search-result-preview-color: $grey-dk-100;
-
-//$link-color: darken($red-300, 10%);
 $link-color: rgb(150,28,68,100);
 
 // Buttons
-// $btn-primary-color: darken($red-300, 10%);
 $btn-primary-color: rgb(150,28,68,100);
 $base-button-color: $grey-lt-000;
 
