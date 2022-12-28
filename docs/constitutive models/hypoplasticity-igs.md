@@ -77,13 +77,12 @@ model.set(ec=1.054, ed=0.677, ei=1.15, phic=33.1/180*np.pi, R=1e-4, mT=1., mR=1.
 ```
 We initialize $\varphi_{c0}, e_{c00}$ and $e_{d00}$ as the angle of repose, the maximum void ratio $e_{max}$ and minimum void ratio $e_{min}$ obtained from laboratory tests, respectively. 
 
-In the last step we specify which parameters we want to vary during optimization. In the present case we want to optimize all parameters of the hypoplastic model. By excluding the parameters of the IGS extension and at the same time initializing $m_R=m_T=1$ we deactivate the IGS extension.
+In the last step we specify which parameters we want to vary during optimization. In the present case we want to optimize all parameters of the hypoplastic model. By excluding the parameters of the IGS extension from this list and at the same time initializing $m_R=m_T=1$ we deactivate the IGS extension.
 
 ```python
-
 to_optimize = \['phic','hs','n','alpha','beta','ed','ec'\]
 ```
-
+We have now successfully set up the hypoplatic constitutive model for optimization by one of the implemented optimization algorithms $\rightarrow$ [Optimization algorithms]({% link docs/algorithms/algorithms.md %})
 
 ## Constitutive Equations
 
