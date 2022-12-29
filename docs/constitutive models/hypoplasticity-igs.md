@@ -57,6 +57,9 @@ The default values for the bounds are:
 * $10^{-5} \leq R \leq 5\cdot10^{-4}$
 * $0 \leq \beta_R \leq 10$
 * $0.1 \leq \chi \leq 15$
+
+## Constraints
+If either $m_T$ or $m_R$ or both are active during optimization, we enforce $m_T \leq m_R$ using a simple penalty approach.
  
 ## Usage
 

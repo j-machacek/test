@@ -71,6 +71,9 @@
 **Fabric-dilatancy tensor**
 * $1 \leq z_{max} \leq 50$
 * $1 \leq c_z \leq 10000$
+
+## Constraints
+If either $M_c$ or $M_e$ or both are active during optimization, we enforce $M_e \leq M_c$ using a simple penalty approach.
   
 ## Usage
 
