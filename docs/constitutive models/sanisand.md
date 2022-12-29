@@ -13,7 +13,35 @@
 {:toc}
 
 ## Parameters
+* $p_{atm}$ - key: `patm` - provided in kPa, in most cases $p_{atm}=100$ kPa is valid.
+**Critical state**
+* $M_e$ - key: `M_e`
+* $M_c$ - key: `M_c` 
+* $\lambda_c$ - key: `lambda_c` 
+* $e_0$ - key: `e0` 
+* $\xi$ - key: `xi` 
+**Elasticity**
+* $G_0$ - key: `G0`
+* $\nu$ - key: `nu`
+**Yield surface** 
+* $m$ - key: `m`
+**Kinematic hardening**
+* $n_b$ - key: `n_b`
+* $h_0$ - key: `h0`
+* $c_h$ - key: `c_h` 
+**Plastic volumetric strain** 
+* $n_d$ - key: `n_d`
+* $A_0$ - key: `A0`
+**Fabric-dilatancy tensor**
+* $z_{max}$ - key: `z_max`
+* $c_z$ - key: `c_z`
 
+  self.e00 = 0.
+
+  self.xi = 0.
+  self.M_c0 = 0.
+  self.M_e0 = 0.  
+  
 ## Bounds
 
 
@@ -40,7 +68,8 @@ model.set(p_atm = 100, e0 = 1.0, phic = 32, c_z = 2400, z_max = 100)
 ```
 We initialize $p_{atm}=100$ kPa and $\varphi_{c}$ as the angle of repose obtained from laboratory tests, respectively. Since for the sake of this example we are only interested in the calibration of "monotonic" parameters, we as well initialize $c_z$ and $z_{max}$ to - in this case - known values form a complete calibration performed in the past.
 
-> By initializing $\varphi_c$ instead of $M_e$ and $M_c$, the slopes of the CSL in triaxial compression and triaxial extension are automatically initialized as $M_c = 6\sin(\varphi_c)/(3-\sin(\varphi_c))$ and $M_e = 6\sin(\varphi_c)/(3+\sin(\varphi_c))$. Of course $M_c$ and $M_e$ could have also been initialized (without obeying above equations for $M_c(\varphi_c)$ and $M_e(\varphi_c)$) instead of $\varphi_c$.
+> **Note**
+By initializing $\varphi_c$ instead of $M_e$ and $M_c$, the slopes of the CSL in triaxial compression and triaxial extension are automatically initialized as $M_c = 6\sin(\varphi_c)/(3-\sin(\varphi_c))$ and $M_e = 6\sin(\varphi_c)/(3+\sin(\varphi_c))$. Of course $M_c$ and $M_e$ could have also been initialized (without obeying above equations for $M_c(\varphi_c)$ and $M_e(\varphi_c)$) instead of $\varphi_c$.
 
 In the last step we specify which parameters we want to vary during optimization. In the present case we want to optimize all parameters of the SANISAND model influencing the models response during monotonic loading. For convenience, the reference pressure $p_{atm}$ is kept constant.
 
@@ -179,7 +208,7 @@ $$
 	\dot{\boldsymbol{\alpha}}= \frac{2}{3}\langle L\rangle h (\boldsymbol{\alpha}^b_{\theta} - \boldsymbol{\alpha})
 $$
 
-The initial back-stress tensor $\boldsymbol{\alpha}_{\textrm{ini}}$ is updated to $\boldsymbol{\alpha}$ in case of a load reversal which occurs in case of $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\textrm{ini}}):\textbf{n}<0$
+The initial back-stress tensor $\boldsymbol{\alpha}_{\textrm{ini}}$ is updated to $\boldsymbol{\alpha}$ in case of a load reversal which occurs in case of $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\textbf{n}<0$
 
 
 ## References
