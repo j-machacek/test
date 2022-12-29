@@ -67,7 +67,6 @@
 **Elasticity**
 * $50 \leq G_0 \leq 500$ in kPa
 * $0.0 \leq \nu \leq 0.4$ 
-
 **Yield surface** 
 * $0.001 \leq m \leq 0.1$ 
 
@@ -245,9 +244,6 @@ Lastly, the change of the back-stress tensor $\boldsymbol{\alpha}$ is
 $$
 \dot{\boldsymbol{\alpha}}= \frac{2}{3}\langle L\rangle h (\boldsymbol{\alpha}^b_{\theta} - \boldsymbol{\alpha})
 $$
-
-The initial back-stress tensor $\boldsymbol{\alpha}_\text{ini}$ is updated to $\boldsymbol{\alpha}$ in case of a load reversal which occurs in case of $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_\text{ini}):\textbf{n}<0$
-
 
 ## References
 
