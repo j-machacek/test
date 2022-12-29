@@ -8,8 +8,8 @@
 # Contributing
 {: .no_toc }
 
-* **Jan Machaček**, *Technische Universität Darmstadt* & *Ruh-Universität Bochum*, <jan-machacek@outlook.com>, <jan.machacek@tu-darmstadt.de> 
+* **Jan Machaček**, *Technische Universität Darmstadt* & *Ruhr-Universität Bochum*, <jan-machacek@outlook.com>, <jan.machacek@tu-darmstadt.de> 
 * Patrick Staubach, *Bauhaus-Universität Weimar*
 * Simon Siegel, *Technische Universität Darmstadt*
 * Frederik Brosz, *Technische Universität Darmstadt*
-* Merita Tafili, *Ruh-Universität Bochum*
+* Merita Tafili, *Ruhr-Universität Bochum*
