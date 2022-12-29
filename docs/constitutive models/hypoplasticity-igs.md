@@ -15,7 +15,7 @@ Hypoplastic model for sands, von Wolffersdorff version [1] with InterGranular St
 {:toc}
 
 ## Parameters
-**Hypoplasticity**
+*Hypoplasticity* 
 * $\nu$ - key: `nu` - if omitted the basic hypoplastic model of *von Wolffersdorff* is recovered
     > The Poisson's ratio $\nu$ is a modification of the original formulation introduced by A. Niemunis [4] to have more flexibility in fitting the inclination of the first loading cycle in $p-q$ space in cyclic triaxial tests. By setting $\nu=0$, the original von Wolffersdorff version is recovered.
 * $\varphi_c$ - key: `phic` - provided in rad.
@@ -29,7 +29,7 @@ Hypoplastic model for sands, von Wolffersdorff version [1] with InterGranular St
 
 > The reference values $\varphi_{c0}, e_{c00}$ and $e_{d00}$ are usually chosen as the angle of repose, the maximum void ratio $e_{max}$ and minimum void ratio $e_{min}$ obtained from laboratory tests, respectively.
 
-**Intergranular Strain (IGS)**
+*Intergranular Strain (IGS)* 
 * $m_R$ - key `mR`
 * $m_T$ - key `mT`
 * $\beta_R$ - key `betaR`
@@ -40,7 +40,7 @@ Hypoplastic model for sands, von Wolffersdorff version [1] with InterGranular St
 ## Bounds
 The default values for the bounds are:
 
-**Hypoplasticity**
+*Hypoplasticity* 
 * $0.0 \leq \nu \leq 0.4$ 
 * $0.9 \varphi_{c0} \leq \varphi_c \leq 1.1\varphi_{c0}$, where $\varphi_{c0}$ is a value submitted by the user
 * $10^{-4} \leq h_s \leq 75$ - provided in GPa
@@ -51,7 +51,7 @@ The default values for the bounds are:
 * $0.9 e_{d00} \leq e_{d0} \leq 1.1e_{d00}$, where $e_{d00}$ is a value submitted by the user
 * $f_{ei} = e_{i0}/e_{c0}$ - typically in the range of 1.15 - 1.2
 
-**Intergranular Strain**
+*Intergranular Strain* 
 * $1 \leq m_R \leq 15$
 * $1 \leq m_T \leq 15$
 * $10^{-5} \leq R \leq 5\cdot10^{-4}$

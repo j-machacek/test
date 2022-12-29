@@ -15,30 +15,30 @@
 ## Parameters
 * $p_{atm}$ - key: `patm` - provided in kPa, in most cases $p_{atm}=100$ kPa is valid.
 
-**Critical state**
+*Critical state* 
 * $M_e$ - key: `M_e`
 * $M_c$ - key: `M_c` 
 * $\lambda_c$ - key: `lambda_c` 
 * $e_0$ - key: `e0` 
 * $\xi$ - key: `xi` 
 
-**Elasticity**
+*Elasticity* 
 * $G_0$ - key: `G0`
 * $\nu$ - key: `nu`
 
-**Yield surface** 
+*Yield surface* 
 * $m$ - key: `m`
 
-**Kinematic hardening**
+*Kinematic hardening* 
 * $n_b$ - key: `n_b`
 * $h_0$ - key: `h0`
 * $c_h$ - key: `c_h` 
 
-**Plastic volumetric strain** 
+*Plastic volumetric strain* 
 * $n_d$ - key: `n_d`
 * $A_0$ - key: `A0`
 
-**Fabric-dilatancy tensor**
+*Fabric-dilatancy tensor*
 * $z_{max}$ - key: `z_max`
 * $c_z$ - key: `c_z`
 
@@ -51,7 +51,7 @@
 ## Bounds
 * $100 \leq p_{atm} \leq 100$ in kPa
 
-**Critical state**
+*Critical state*
 * $0.6 \leq M_c \leq 1.6$
     > If an initial value $M_{c0}$ for $M_c$ is given, the bounds are set to $0.9 M_{c0} \leq M_c \leq 1.10 M_{c0}$
 * $0.6 \leq M_e \leq 1.6$
@@ -64,22 +64,23 @@
 * $0.1 \leq \xi \leq 1.5$
     > If an initial value $\xi_{0}$ for $\xi$ is given, the bounds are set to $0.9 \xi_{0} \leq \xi \leq 1.10 \xi_{0}$
  
-**Elasticity**
+*Elasticity*
 * $50 \leq G_0 \leq 500$ in kPa
 * $0.0 \leq \nu \leq 0.4$ 
-**Yield surface** 
+
+*Yield surface* 
 * $0.001 \leq m \leq 0.1$ 
 
-**Kinematic hardening**
+*Kinematic hardening*
 * $0.01 \leq n_b \leq 2.5$
 * $0.01 \leq h_0 \leq 10.0$`
 * $0.0 \leq c_h \leq 1.1$
 
-**Plastic volumetric strain** 
+*Plastic volumetric strain* 
 * $0.1 \leq n_d \leq 3.5$
 * $0.2 \leq A_0 \leq 1.0$
 
-**Fabric-dilatancy tensor**
+*Fabric-dilatancy tensor*
 * $1 \leq z_{max} \leq 50$
 * $1 \leq c_z \leq 10000$
 
