@@ -43,10 +43,34 @@
   self.M_e0 = 0.  
   
 ## Bounds
-
-
-## Notes
-
+* $100 \leq p_{atm} \leq 100$ in kPa
+**Critical state**
+* $0.6 \leq M_c \leq 1.6$
+    > If an initial value $M_{c0}$ for $M_c$ is given, the bounds are set to $0.9 M_{c0} \leq M_c \leq 1.10 M_{c0}$
+* $0.6 \leq M_e \leq 1.6$
+    > If an initial value $M_{e0}$ for $M_e$ is given, the bounds are set to $0.9 M_{e0} \leq M_e \leq 1.10 M_{e0}$
+* $0.005 \leq \lambda_c \leq 0.5$
+    > If an initial value $\lambda_{c0}$ for $\lambda_c$ is given, the bounds are set to $0.9 \lambda_{c0} \leq \lambda_c \leq 1.10 \lambda_{c0}$
+* $0.5 \leq e_0 \leq 1.6$ 
+    > If an initial value $e_{00}$ for $e_0$ is given, the bounds are set to $0.85 e_{00} \leq e_0 \leq 1.15 e_{00}$
+* $\xi$ - key: `xi` 
+* $0.1 \leq \xi \leq 1.5$
+    > If an initial value $\xi_{0}$ for $\xi$ is given, the bounds are set to $0.9 \xi_{0} \leq \xi \leq 1.10 \xi_{0}$
+**Elasticity**
+* $50 \leq G_0 \leq 500$ in kPa
+* $0.0 \leq \nu \leq 0.4$ 
+**Yield surface** 
+* $0.001 \leq m \leq 0.1$ 
+**Kinematic hardening**
+* $0.01 \leq n_b \leq 2.5$
+* $0.01 \leq h_0 \leq 10.0$`
+* $0.0 \leq c_h \leq 1.1$
+**Plastic volumetric strain** 
+* $0.1 \leq n_d \leq 3.5$
+* $0.2 \leq A_0 \leq 1.0$
+**Fabric-dilatancy tensor**
+* $1 \leq z_{max} \leq 50$
+* $1 \leq c_z \leq 10000$
   
 ## Usage
 
@@ -68,8 +92,7 @@ model.set(p_atm = 100, e0 = 1.0, phic = 32, c_z = 2400, z_max = 100)
 ```
 We initialize $p_{atm}=100$ kPa and $\varphi_{c}$ as the angle of repose obtained from laboratory tests, respectively. Since for the sake of this example we are only interested in the calibration of "monotonic" parameters, we as well initialize $c_z$ and $z_{max}$ to - in this case - known values form a complete calibration performed in the past.
 
-> **Note**
-By initializing $\varphi_c$ instead of $M_e$ and $M_c$, the slopes of the CSL in triaxial compression and triaxial extension are automatically initialized as $M_c = 6\sin(\varphi_c)/(3-\sin(\varphi_c))$ and $M_e = 6\sin(\varphi_c)/(3+\sin(\varphi_c))$. Of course $M_c$ and $M_e$ could have also been initialized (without obeying above equations for $M_c(\varphi_c)$ and $M_e(\varphi_c)$) instead of $\varphi_c$.
+> By initializing $\varphi_c$ instead of $M_e$ and $M_c$, the slopes of the CSL in triaxial compression and triaxial extension are automatically initialized as $M_c = 6\sin(\varphi_c)/(3-\sin(\varphi_c))$ and $M_e = 6\sin(\varphi_c)/(3+\sin(\varphi_c))$. Of course $M_c$ and $M_e$ could have also been initialized (without obeying above equations for $M_c(\varphi_c)$ and $M_e(\varphi_c)$) instead of $\varphi_c$.
 
 In the last step we specify which parameters we want to vary during optimization. In the present case we want to optimize all parameters of the SANISAND model influencing the models response during monotonic loading. For convenience, the reference pressure $p_{atm}$ is kept constant.
 
@@ -205,10 +228,10 @@ $$
 Lastly, the change of the back-stress tensor $\boldsymbol{\alpha}$ is
 
 $$
-	\dot{\boldsymbol{\alpha}}= \frac{2}{3}\langle L\rangle h (\boldsymbol{\alpha}^b_{\theta} - \boldsymbol{\alpha})
+\dot{\boldsymbol{\alpha}}= \frac{2}{3}\langle L\rangle h (\boldsymbol{\alpha}^b_{\theta} - \boldsymbol{\alpha})
 $$
 
-The initial back-stress tensor $\boldsymbol{\alpha}_{\textrm{ini}}$ is updated to $\boldsymbol{\alpha}$ in case of a load reversal which occurs in case of $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\textbf{n}<0$
+The initial back-stress tensor $\boldsymbol{\alpha}_{\text{ini}}$ is updated to $\boldsymbol{\alpha}$ in case of a load reversal which occurs in case of $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\textbf{n}<0$
 
 
 ## References
