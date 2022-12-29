@@ -14,24 +14,30 @@
 
 ## Parameters
 * $p_{atm}$ - key: `patm` - provided in kPa, in most cases $p_{atm}=100$ kPa is valid.
+
 **Critical state**
 * $M_e$ - key: `M_e`
 * $M_c$ - key: `M_c` 
 * $\lambda_c$ - key: `lambda_c` 
 * $e_0$ - key: `e0` 
 * $\xi$ - key: `xi` 
+
 **Elasticity**
 * $G_0$ - key: `G0`
 * $\nu$ - key: `nu`
+
 **Yield surface** 
 * $m$ - key: `m`
+
 **Kinematic hardening**
 * $n_b$ - key: `n_b`
 * $h_0$ - key: `h0`
 * $c_h$ - key: `c_h` 
+
 **Plastic volumetric strain** 
 * $n_d$ - key: `n_d`
 * $A_0$ - key: `A0`
+
 **Fabric-dilatancy tensor**
 * $z_{max}$ - key: `z_max`
 * $c_z$ - key: `c_z`
@@ -44,6 +50,7 @@
   
 ## Bounds
 * $100 \leq p_{atm} \leq 100$ in kPa
+
 **Critical state**
 * $0.6 \leq M_c \leq 1.6$
     > If an initial value $M_{c0}$ for $M_c$ is given, the bounds are set to $0.9 M_{c0} \leq M_c \leq 1.10 M_{c0}$
@@ -56,18 +63,23 @@
 * $\xi$ - key: `xi` 
 * $0.1 \leq \xi \leq 1.5$
     > If an initial value $\xi_{0}$ for $\xi$ is given, the bounds are set to $0.9 \xi_{0} \leq \xi \leq 1.10 \xi_{0}$
+ 
 **Elasticity**
 * $50 \leq G_0 \leq 500$ in kPa
 * $0.0 \leq \nu \leq 0.4$ 
+
 **Yield surface** 
 * $0.001 \leq m \leq 0.1$ 
+
 **Kinematic hardening**
 * $0.01 \leq n_b \leq 2.5$
 * $0.01 \leq h_0 \leq 10.0$`
 * $0.0 \leq c_h \leq 1.1$
+
 **Plastic volumetric strain** 
 * $0.1 \leq n_d \leq 3.5$
 * $0.2 \leq A_0 \leq 1.0$
+
 **Fabric-dilatancy tensor**
 * $1 \leq z_{max} \leq 50$
 * $1 \leq c_z \leq 10000$
@@ -183,7 +195,7 @@ $$
 where $h$ is given by
 
 $$
-	h=\frac{G_{0}h_{0}(1-c_{h}e)\left(\frac{p}{p_{\text{atm}}}\right)^{-1/2}}{(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\textrm{ini}}):\textbf{n}}
+	h=\frac{G_{0}h_{0}(1-c_{h}e)\left(\frac{p}{p_{\text{atm}}}\right)^{-1/2}}{(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\textbf{n}}
 $$
 
 and $\boldsymbol{\alpha}^b_{\theta}$ by
@@ -234,11 +246,11 @@ $$
 \dot{\boldsymbol{\alpha}}= \frac{2}{3}\langle L\rangle h (\boldsymbol{\alpha}^b_{\theta} - \boldsymbol{\alpha})
 $$
 
-The initial back-stress tensor $\boldsymbol{\alpha}_{\text{ini}}$ is updated to $\boldsymbol{\alpha}$ in case of a load reversal which occurs in case of $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\textbf{n}<0$
+The initial back-stress tensor $\boldsymbol{\alpha}_\text{ini}$ is updated to $\boldsymbol{\alpha}$ in case of a load reversal which occurs in case of $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_\text{ini}):\textbf{n}<0$
 
 
 ## References
 
 [1] Y. F. Dafalias and M. T. Manzari, ‘Simple plasticity sand model accounting for fabric change effects’, Journal of Engineering mechanics, vol. 130, no. 6, pp. 622–634, 2004.
 
-[2] K. Been and M. G. Jefferies, ‘A state parameter for sands’, _Géotechnique_, vol. 35, no. 2, pp. 99–112, Jun. 1985, doi: [10.1680/geot.1985.35.2.99](https://doi.org/10.1680/geot.1985.35.2.99).
+[2] K. Been and M. G. Jefferies, ‘A state parameter for sands’, Géotechnique, vol. 35, no. 2, pp. 99–112, Jun. 1985, doi: [10.1680/geot.1985.35.2.99](https://doi.org/10.1680/geot.1985.35.2.99).
