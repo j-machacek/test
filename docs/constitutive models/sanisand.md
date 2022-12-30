@@ -144,6 +144,7 @@ $$
 $$
 
 The plastic multiplicator $L$ is given by
+
 $$
 	L=\frac{2G \textbf{n}:\dot{\boldsymbol{\varepsilon}}^* - K \textbf{n}:\textbf{r}~ \text{tr}(\dot{\boldsymbol{\varepsilon}})}
 	{ K_p 2G (B -C \text{tr}~\textbf{n}^3) -  KD  \textbf{n}:\textbf{r}}.
