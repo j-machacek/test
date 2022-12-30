@@ -71,7 +71,7 @@ ACTglobals.setup(
   Similarity = 'frechet',
   path = os.getcwd())
 
-ACTmealpy.optimize(maxiter=100, n_cpu=4, method='DifferentialEvolution-SHADE')
+ACTmealpy.optimize(maxiter=100, n_cpu=4, method='DifferentialEvolution-LSHADE')
 ```
 
 ### References

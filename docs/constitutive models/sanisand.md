@@ -149,13 +149,6 @@ $$
 	{ K_p 2G (B -C \text{tr}~\textbf{n}^3) -  KD  \textbf{n}:\textbf{r}}.
 $$
 
-Using $\dot{\boldsymbol{\varepsilon}}^* = (\textbf{I}-\vec{\boldsymbol{1}}\vec{\boldsymbol{1}}):\dot{\boldsymbol{\varepsilon}}$ and $\text{tr}(\dot{\boldsymbol{\varepsilon}}) = \boldsymbol{1}:\dot{\boldsymbol{\varepsilon}}$, above equation is rewritten to
-
-$$
-	L=\frac{\big(2G \textbf{n}:(\textbf{I}-\vec{\boldsymbol{1}}\vec{\boldsymbol{1}}) -  \textbf{n}:\textbf{r}~\boldsymbol{1}\big):\dot{\boldsymbol{\varepsilon}}}
-	{ K_p 2G (B -C \text{tr}~\textbf{n}^3) -  KD  \textbf{n}:\textbf{r}}.
-$$
-
 $K_p$ is a hardening variable and defined as
 
 $$
