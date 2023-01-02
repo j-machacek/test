@@ -195,10 +195,10 @@ $$
 	\boldsymbol{\alpha}^b_{\theta}=\sqrt{\frac{2}{3}}\bigg[g(\theta,c)Me^{-n^b\psi}-m\bigg]\textbf{n}.
 $$
 
-> $\boldsymbol{\alpha}_\text{ini}$ is an evolving variable which is updated to $\boldsymbol{\alpha}_\text{ini}=\boldsymbol{\alpha}$ in case of a load reversal which is detected according to one of the following conditions:
-    (1) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_\text{ini}):\boldsymbol{n} < 0$ 
-    (2) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_\text{ini}):\Delta \boldsymbol{T}^{el} < 0$ 
-    (3) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_\text{ini}):\left( \boldsymbol{T}-tr(\boldsymbol{T})/3*(\boldsymbol{\delta}+\boldsymbol{\alpha}) \right) < 0$
+$\boldsymbol{\alpha}_{\text{ini}}$ is an evolving variable which is updated to $\boldsymbol{\alpha}_{\text{ini}}=\boldsymbol{\alpha}$ in case of a load reversal which is detected according to one of the following conditions:
+    (1) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\boldsymbol{n} < 0$ 
+    (2) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\Delta \boldsymbol{T}^{el} < 0$ 
+    (3) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}): [\boldsymbol{T}-tr(\boldsymbol{T})/3 (\boldsymbol{\delta}+\boldsymbol{\alpha})] < 0$
 
 $M$ is the stress ratio in the critical state, $n^b$ and $m$ are parameters introduced later. $\psi$ is the Been & Jefferies [2] state variable and defined as
 
