@@ -14,4 +14,4 @@
 * Frederik Brosz, *Technische Universität Darmstadt*
 * Merita Tafili, *Ruhr-Universität Bochum*
 
-Many thanks to Prof. Carlos Grandas Tavera (*BTU Cottbus*) for all the discussions - even at the most impossible hours of the day!
+> Many thanks to Prof. Carlos Grandas Tavera (*BTU Cottbus*) for all the discussions - even at the most impossible hours of the day!
