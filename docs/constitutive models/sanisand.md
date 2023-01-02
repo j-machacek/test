@@ -55,7 +55,7 @@ Optional parameters offer advanced users more flexibility in choosing amongst di
 * `maximum_voidratio, 0.0`- Maximum allowed void ratio $e^{max}$ (off per default). If active (for any value larger than zero),  $e=min(e,e^{max})$ is enforced.
 * `minimum_voidratio, 0.0`- Minimum allowed void ratio  $e^{min}$ (off per default). If active (for any value larger than zero), $e=max(e,e^{min})$ is enforced.
 * `force_elastic, 0` - Enforce elastic response, 0 = no, 1 = yes
-* `update_alpha, 1` - Method for the update of $\boldsymbol{\alpha}_{in}$. is set when the condition $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{in}):\boldsymbol{v} < 0.0$ is satisfied, where $\boldsymbol{v}=\boldsymbol{n}$ (1) or $\boldsymbol{v}=\Delta \boldsymbol{T}^{el}$ (2) or  $\boldsymbol{v}=\boldsymbol{T}-tr(\boldsymbol{T})/3*(\boldsymbol{\delta}+\boldsymbol{\alpha})$ (3). For more information, see 
+* `update_alpha, 1` - Method for the update of $\boldsymbol{\alpha}_\text{ini}$ according to Section [Constitutive Equations](#constitutive-equations)
   
 ## Bounds
 * $100 \leq p_{atm} \leq 100$ in kPa
@@ -195,10 +195,10 @@ $$
 	\boldsymbol{\alpha}^b_{\theta}=\sqrt{\frac{2}{3}}\bigg[g(\theta,c)Me^{-n^b\psi}-m\bigg]\textbf{n}.
 $$
 
-> $\boldsymbol{\alpha}_{ini}$ is an evolving variable which is updated to $\boldsymbol{\alpha}_{ini}=\boldsymbol{\alpha}$ in case of a load reversal which is detected according to one of the following conditions:
-    (1) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{in}):\boldsymbol{n} < 0$ 
-    (2) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{in}):\Delta \boldsymbol{T}^{el} < 0$ 
-    (3) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{in}):\left( \boldsymbol{T}-tr(\boldsymbol{T})/3*(\boldsymbol{\delta}+\boldsymbol{\alpha}) \right) < 0$
+> $\boldsymbol{\alpha}_\text{ini}$ is an evolving variable which is updated to $\boldsymbol{\alpha}_\text{ini}=\boldsymbol{\alpha}$ in case of a load reversal which is detected according to one of the following conditions:
+    (1) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_\text{ini}):\boldsymbol{n} < 0$ 
+    (2) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_\text{ini}):\Delta \boldsymbol{T}^{el} < 0$ 
+    (3) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_\text{ini}):\left( \boldsymbol{T}-tr(\boldsymbol{T})/3*(\boldsymbol{\delta}+\boldsymbol{\alpha}) \right) < 0$
 
 $M$ is the stress ratio in the critical state, $n^b$ and $m$ are parameters introduced later. $\psi$ is the Been & Jefferies [2] state variable and defined as
 
