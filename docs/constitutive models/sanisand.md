@@ -129,25 +129,13 @@ where `triax_CU` requires a list of experimental results of undrained triaxial t
 SANISAND [1] is an elasto-plastic model of the following form:
 
 $$
-\begin{aligned}
-	\bm{\mathring{\sigma}}&= \sf E^{ep} (\bm{\sigma},\bm{\alpha},e,\bm{\dot{\varepsilon}} ):\bm{\dot{\varepsilon}} \\\nonumber
-	&=\bigg(2G(\textbf{I}-\vec{\boldsymbol{1}}\vec{\boldsymbol{1}}) + K \vec{\boldsymbol{1}}\vec{\boldsymbol{1}} -\langle L\rangle\bm{\dot{\varepsilon}} ^{-1} \big\{2G\big[B\textbf{n}-C(\textbf{n}^2 - \frac{1}{3}\boldsymbol{1})\big] + KD  \boldsymbol{1}\big\}\bigg):\bm{\dot{\varepsilon}} 
-\end{aligned}
+	\dot{\boldsymbol{\sigma}} = \sf{E^{ep}} :\dot{\boldsymbol{\varepsilon}}
 $$
 
-The objective stress rate is calculated using:
+with total strain rate $\dot{\boldsymbol{\varepsilon}}$ and the elasto-plastic stiffness $\sf E^{ep}$:
 
 $$
-	\dot{\boldsymbol{\sigma}} = \sf E^{ep} :\dot{\boldsymbol{\varepsilon}}
-$$
-
-with the elasto-plastic stiffness $\sf E^{ep}$:
-
-$$
-\begin{aligned}
-	\sf E^{ep} &=2G(\textbf{I}-\vec{\boldsymbol{1}}\vec{\boldsymbol{1}}) + K \vec{\boldsymbol{1}}\vec{\boldsymbol{1}} \nonumber \\
-	&-\langle L\rangle\dot{\boldsymbol{\varepsilon}}^{-1} \big(2G\big[B\textbf{n}-C(\textbf{n}^2 - \frac{1}{3}\boldsymbol{1})\big] + KD  \boldsymbol{1}\big)
-\end{aligned}
+\sf E^{ep} = 2G(\textbf{I}-\vec{\boldsymbol{1}}\vec{\boldsymbol{1}}) + K \vec{\boldsymbol{1}}\vec{\boldsymbol{1}} -\langle L\rangle\dot{\boldsymbol{\varepsilon}}^{-1} \big(2G\big[B\textbf{n}-C(\textbf{n}^2 - \frac{1}{3}\boldsymbol{1})\big] + KD  \boldsymbol{1}\big)
 $$
 
 The scalar elastic stiffness parameters $G$ and $K$ are defined as
@@ -160,6 +148,7 @@ $$
 $$
 
 where $G_{0}$, $p_{atm}$ and $\nu$ are material parameters. The plastic multiplier (or loading index) $L$ is larger than zero if the yield surface representing a wedge in the 2D stress space and defined by
+
 $$
 	f=\sqrt{(\boldsymbol{\sigma}^{*}-p\boldsymbol{\alpha}):(\boldsymbol{\sigma}^{*}-p\boldsymbol{\alpha})}-\sqrt{\frac{2}{3}}pm <0
 $$
@@ -173,7 +162,7 @@ $$
 The plastic multiplicator $L$ is given by
 
 $$
-	L=\frac{2G \textbf{n}:\dot{\boldsymbol{\varepsilon}}^* - K \textbf{n}:\textbf{r}~ \text{tr}(\dot{\boldsymbol{\varepsilon}})}
+L = \dfrac{2G \textbf{n}:\dot{\boldsymbol{\varepsilon}}^* - K \textbf{n}:\textbf{r}~ \text{tr}(\dot{\boldsymbol{\varepsilon}})}
 	{ K_p 2G (B -C \text{tr}~\textbf{n}^3) -  KD  \textbf{n}:\textbf{r}}.
 $$
 
@@ -186,25 +175,25 @@ $$
 where $h$ is given by
 
 $$
-	h=\frac{G_{0}h_{0}(1-c_{h}e)\left(\frac{p}{p_{\text{atm}}}\right)^{-1/2}}{(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\textbf{n}}
+h=\dfrac{G_{0}h_{0}(1-c_{h}e)}{\sqrt{p/p_{\text{atm}}} (\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\textbf{n}}
 $$
 
 and $\boldsymbol{\alpha}^b_{\theta}$ by
 
 $$
-	\boldsymbol{\alpha}^b_{\theta}=\sqrt{\frac{2}{3}}\bigg[g(\theta,c)M\text{exp}(-n^b\psi)-m\bigg]\textbf{n}.
+\boldsymbol{\alpha}^b_{\theta}=\sqrt{\frac{2}{3}}\bigg[g(\theta,c)M\text{exp}(-n^b\psi)-m\bigg]\textbf{n}.
 $$
 
-The update of the initial back-stress is performed in case of a load reversal which is detected according to one of the following conditions (depending on the method specified in [Optional parameters](#optional-parameters)):
+The update of the initial back-stress is performed in case of a load reversal which is detected according to one of the following conditions (depending on the method `update_alpha` specified in [Optional parameters](#optional-parameters)):
+
 $$
 \boldsymbol{\alpha}_{\text{ini}}=\boldsymbol{\alpha} ~~~ if ~~~
 \begin{cases}
     (1)&~~~ (\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\boldsymbol{n} < 0 \\
     (2)&~~~ (\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\Delta \boldsymbol{T}^{el} < 0 \\
-    (3)&~~~ (\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}): [\boldsymbol{T}-tr(\boldsymbol{T})/3 (\boldsymbol{\delta}+\boldsymbol{\alpha})] < 0
+    (3)&~~~ (\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}): [\boldsymbol{T}-\text{tr}(\boldsymbol{T})/3 (\boldsymbol{\delta}+\boldsymbol{\alpha})] < 0
 \end{cases}
 $$
-
 
 $M$ is the stress ratio in the critical state, $n^b$ and $m$ are parameters introduced later. $\psi$ is the Been & Jefferies [2] state variable and defined as
 
