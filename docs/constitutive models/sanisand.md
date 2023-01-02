@@ -29,6 +29,8 @@
 * $A_0$ - key: `A0`
 * $z_{max}$ - key: `z_max`
 * $c_z$ - key: `c_z`
+
+> Note that the model does not directly respect the critical state defined by $M_c$ and $M_e$ but rather one defined by $(1+m) M_c$ and $(1+m) M_e$
   
 ## Bounds
 * $100 \leq p_{atm} \leq 100$ in kPa
