@@ -5,7 +5,7 @@
     grand_parent: Fundamentals
     katex: true
 ---
-### Triaxial Test - Consolidated Undrained
+# Triaxial Test - Consolidated Undrained
 
-#### Compression
-#### Extension
+## Compression
+## Extension

@@ -5,4 +5,4 @@
     grand_parent: Fundamentals
     katex: true
 ---
-### Area Between Curves
+# Area Between Curves

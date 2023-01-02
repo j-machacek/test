@@ -5,4 +5,4 @@
     grand_parent: Fundamentals
     katex: true
 ---
-### Modified Least Square
+# Modified Least Square

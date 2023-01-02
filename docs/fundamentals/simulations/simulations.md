@@ -5,7 +5,7 @@
     has_children: true
     katex: true
 ---
-## Simulations
+# Simulations
 {: .no_toc }
 
 

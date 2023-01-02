@@ -5,4 +5,4 @@
     grand_parent: Fundamentals
     katex: true
 ---
-### Frechet Distance
+# Frechet Distance

@@ -5,4 +5,4 @@
     grand_parent: Fundamentals
     katex: true
 ---
-### Oedometric Compression Test
+# Oedometric Compression Test

@@ -5,4 +5,4 @@
     grand_parent: Fundamentals
     katex: true
 ---
-### Dynamic Time Warping
+# Dynamic Time Warping

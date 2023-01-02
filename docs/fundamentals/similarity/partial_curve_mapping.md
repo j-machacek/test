@@ -5,4 +5,4 @@
     grand_parent: Fundamentals
     katex: true
 ---
-### Partial Curve Mapping
+# Partial Curve Mapping

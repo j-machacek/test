@@ -5,7 +5,7 @@
     grand_parent: Fundamentals
     katex: true
 ---
-### Triaxial Test - Cyclic Consolidated Undrained
+# Triaxial Test - Cyclic Consolidated Undrained
 
-#### Stress controlled
-#### Strain controlled
+## Stress controlled
+## Strain controlled

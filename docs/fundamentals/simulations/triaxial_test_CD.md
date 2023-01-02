@@ -5,4 +5,4 @@
     grand_parent: Fundamentals
     katex: true
 ---
-### Triaxial Test - Consolidated Drained
+# Triaxial Test - Consolidated Drained
