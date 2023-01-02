@@ -192,13 +192,19 @@ $$
 and $\boldsymbol{\alpha}^b_{\theta}$ by
 
 $$
-	\boldsymbol{\alpha}^b_{\theta}=\sqrt{\frac{2}{3}}\bigg[g(\theta,c)Me^{-n^b\psi}-m\bigg]\textbf{n}.
+	\boldsymbol{\alpha}^b_{\theta}=\sqrt{\frac{2}{3}}\bigg[g(\theta,c)M\text{exp}(-n^b\psi)-m\bigg]\textbf{n}.
 $$
 
-$\boldsymbol{\alpha}_{\text{ini}}$ is an evolving variable which is updated to $\boldsymbol{\alpha}_{\text{ini}}=\boldsymbol{\alpha}$ in case of a load reversal which is detected according to one of the following conditions:
-    (1) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\boldsymbol{n} < 0$ 
-    (2) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\Delta \boldsymbol{T}^{el} < 0$ 
-    (3) $(\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}): [\boldsymbol{T}-tr(\boldsymbol{T})/3 (\boldsymbol{\delta}+\boldsymbol{\alpha})] < 0$
+The update of the initial back-stress is performed in case of a load reversal which is detected according to one of the following conditions (depending on the method specified in [Optional parameters](#optional-parameters)):
+$$
+\boldsymbol{\alpha}_{\text{ini}}=\boldsymbol{\alpha} ~~~ if ~~~
+\begin{cases}
+    (1)&~~~ (\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\boldsymbol{n} < 0 \\
+    (2)&~~~ (\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}):\Delta \boldsymbol{T}^{el} < 0 \\
+    (3)&~~~ (\boldsymbol{\alpha}-\boldsymbol{\alpha}_{\text{ini}}): [\boldsymbol{T}-tr(\boldsymbol{T})/3 (\boldsymbol{\delta}+\boldsymbol{\alpha})] < 0
+\end{cases}
+$$
+
 
 $M$ is the stress ratio in the critical state, $n^b$ and $m$ are parameters introduced later. $\psi$ is the Been & Jefferies [2] state variable and defined as
 
@@ -218,10 +224,10 @@ $$
 	D = A_d(\boldsymbol{\alpha}^d_{\theta} - \boldsymbol{\alpha}):\textbf{n}
 $$
 
-where $\alpha^d_{\theta}$ is
+where $\boldsymbol{\alpha}^d_{\theta}$ is
 
 $$
-	\boldsymbol{\alpha}^d_{\theta}=\sqrt{\frac{2}{3}}\bigg[g(\theta,c)Me^{n^d\psi}-m\bigg]\textbf{n}
+	\boldsymbol{\alpha}^d_{\theta}=\sqrt{\frac{2}{3}}\bigg[g(\theta,c)M \text{exp}(n^d\psi)-m\bigg]\textbf{n}
 $$
 
 and $A_d$
