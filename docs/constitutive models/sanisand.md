@@ -42,6 +42,7 @@ nu, h0, c_h, n_b, A0, n_d, z_max, c_z
 ### Optional parameters
 
 Optional parameters offer advanced users more flexibility in choosing amongst different implementation strategies. None of these parameters is mandatory. To change the default values of one or more optional parameters use the keyword `*Optional mechanical parameter` followed by one ore more of the parameters listed below (default values are given with the keyword):
+* `bulk_water, 0.0` - Bulk modulus of pore water $K^w$ for locally undrained simulations $tr(\dot{\boldsymbol{\varepsilon}})=0$. For any value of $K^w > 0$ the rate of pore water pressure is calculated as follows $\dot{p}^w = - K^w tr(\dot{\boldsymbol{\varepsilon}}) (1+e)/e$. The constitutive behaviour is governed by the effective stress $\boldsymbol{\sigma} = \boldsymbol{\sigma}^{tot}-p^w \boldsymbol{\delta}$, where $\boldsymbol{\sigma}^{tot}$ is the total stress and $\boldsymbol{\delta}$ is the # Kronecker delta.
 * `integration, 1` - Method for numerical integration. 1 = Modified-Euler, 2 = Forward Euler
 * `min_pressure, 0.01` - Minimum mean effective stress in kPa (compression = positive).
 * `tol_stress, 1d-4` - Tolerance for stress error in modified-Euler scheme (ignored for Forward Euler)
