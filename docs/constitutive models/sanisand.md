@@ -31,6 +31,28 @@
 * $c_z$ - key: `c_z`
 
 > Note that the model does not directly respect the critical state defined by $M_c$ and $M_e$ but rather one defined by $(1+m) M_c$ and $(1+m) M_e$
+
+The numgeo input key for the Sanisand model is:
+```
+*Mechanical = Sanisand-2
+patm, ec0, lambda, xi, M_c, M_e, m, G0
+nu, h0, c_h, n_b, A0, n_d, z_max, c_z
+`````````
+
+### Optional parameters
+
+Optional parameters offer advanced users more flexibility in choosing amongst different implementation strategies. None of these parameters is mandatory. To change the default values of one or more optional parameters use the keyword `*Optional mechanical parameter` followed by one ore more of the parameters listed below (default values are given with the keyword):
+* `integration, 1` - Method for numerical integration. 1 = Modified-Euler, 2 = Forward Euler
+* `min_pressure, 0.01` - Minimum mean effective stress in kPa (compression = positive).
+* `tol_stress, 1d-4` - Tolerance for stress error in modified-Euler scheme (ignored for Forward Euler)
+* `minimum_dh, 1d-6` - Modified Euler: Minimum size of subincrement, Forward Euler: target strain increment for the calculation of number of subincrements
+* `tangent_stiffness, 2` - When the contribution of the constitutive model $J=\dfrac{\partial \sigma}{\partial \varepsilon}$ to the element stiffness is computed. 1 = tangent stiffness (evaluated at the end of the increment for the updated stress state, default), 2 = "consistent" stiffness (evaluated at the end of each subincrement, a weighted average is returned to the element).
+* `jacobi, 1` - 1 = elastic jacobi, 2 = elaso-plastic tangent, 3 = num-diff jacobi O(h), 4 = num-diff jacobi O(h^2)
+* `tol_yield, 1d-9` - Tolerance for yield surface. Default is $10^{-9}$
+* `drift_correction, 0` - Method for drift correction: 0 = map yield surface by adjusting $\boldsymbol{\alpha}$, 1 = projection along deviatoric plane, else = OpenSees drift correction
+* `drift_maxiter, 50` - Maximum number of iterations for drift correction (only for the OpenSees drift correction, ignored otherwise). 
+* `maximum_voidratio, 0.0`- Maximum allowed void ratio $e^{max}$ (off per default). If active (for any value larger than zero),  $e=min(e,e^{max})$ is enforced.
+* `minimum_voidratio, 0.0`- Minimum allowed void ratio  $e^{min}$ (off per default). If active (for any value larger than zero), $e=max(e,e^{min})$ is enforced.
   
 ## Bounds
 * $100 \leq p_{atm} \leq 100$ in kPa
