@@ -10,3 +10,5 @@
 {:toc}
 
 ## Introduction
+
+<img src="./numgeoACT_overview_eng.png" alt="numgeoACT_overview" width="100%"/>
