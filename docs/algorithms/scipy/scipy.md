@@ -4,7 +4,7 @@
     nav_order: 2
     parent: Optimization algorithms
     has_children: true
-    permalink: /scipy/scipy
+    permalink: scipy/scipy
     has_toc: false
 ---
 # SciPy

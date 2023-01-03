@@ -30,15 +30,15 @@ The interface has five optional arguments:
 * `exit_iter`: Early stoppage criterion. If the global best solution not better an epsilon after `exit_iter` iterations then stop the optimization. Default is `exit_iter=30`
 * `popsize`: Population size defined as the next power to two of `N*popsize`, where `N` is the dimensionality of the problem (= number of parameters of the constitutive model to be optimized). Default is `popsize=15`.
 * `method` : Optimization algorithm to be used. Currently the following algorithms are:
-    * `ArithmeticOptimization`, see [Arithmetic Optimization]({% link docs/algorithms/mealpy/arithmetic_optimization.md%})
-    * `CrossEntropy`, see [Cross-Entropy Method]({% link docs/algorithms/mealpy/cross_entropy.md%})
-    * `DifferentialEvolution`, see [Differential Evolution]({% link docs/algorithms/mealpy/differential_evolution.md%})
-    * `DifferentialEvolution-JADE`, see [Differential Evolution - JADE]({% link docs/algorithms/mealpy/differential_evolution_jade.md%})
-    * `DifferentialEvolution-LSHADE`, see [Differential Evolution - LSHADE]({% link docs/algorithms/mealpy/differential_evolution_lshade.md%})
-    * `GeneticAlgorithm`, see [Genetic Algorithm]({% link docs/algorithms/mealpy/genetic_algorithm.md%})
-    * `GradientBased`, see [Gradient Based Optimization]({% link docs/algorithms/mealpy/gradient_based.md%})
-    * `ParticleSwarmOptimization-CL`, see [Particle Swarm Optimization - Comprehensive Learning]({% link docs/algorithms/mealpy/particle_swarm_optimization_cl.md%})
-    * `ParticleSwarmOptimization-TVAC`, see [Particle Swarm Optimization Hierarchical Time-Varying Acceleration]({% link docs/algorithms/mealpy/particle_swarm_optimization_tvac.md %})
+    * `ArithmeticOptimization`, see [Arithmetic Optimization]({% link algorithms/mealpy/arithmetic_optimization.md%})
+    * `CrossEntropy`, see [Cross-Entropy Method]({% link algorithms/mealpy/cross_entropy.md%})
+    * `DifferentialEvolution`, see [Differential Evolution]({% link algorithms/mealpy/differential_evolution.md%})
+    * `DifferentialEvolution-JADE`, see [Differential Evolution - JADE]({% link algorithms/mealpy/differential_evolution_jade.md%})
+    * `DifferentialEvolution-LSHADE`, see [Differential Evolution - LSHADE]({% link algorithms/mealpy/differential_evolution_lshade.md%})
+    * `GeneticAlgorithm`, see [Genetic Algorithm]({% link algorithms/mealpy/genetic_algorithm.md%})
+    * `GradientBased`, see [Gradient Based Optimization]({% link algorithms/mealpy/gradient_based.md%})
+    * `ParticleSwarmOptimization-CL`, see [Particle Swarm Optimization - Comprehensive Learning]({% link algorithms/mealpy/particle_swarm_optimization_cl.md%})
+    * `ParticleSwarmOptimization-TVAC`, see [Particle Swarm Optimization Hierarchical Time-Varying Acceleration]({% link algorithms/mealpy/particle_swarm_optimization_tvac.md %})
     
 
 ### References
