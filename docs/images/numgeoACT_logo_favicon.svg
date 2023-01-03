@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="95.129089"
-   height="24.525141"
-   viewBox="0 0 25.169571 6.4889436"
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666665 8.4666668"
    version="1.1"
    id="svg8"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="numgeoACT_logo_small.svg"
+   sodipodi:docname="numgeoACT_logo_favicon.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -32,9 +32,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0000001"
-     inkscape:cx="136.24999"
-     inkscape:cy="40.249998"
+     inkscape:zoom="8.0000004"
+     inkscape:cx="32.187498"
+     inkscape:cy="13.062499"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -67,18 +67,18 @@
      transform="translate(-60.205717,-68.725989)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4394px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;letter-spacing:0.0711777px;word-spacing:0px;fill:#2f2e42;fill-opacity:1;stroke:none;stroke-width:0.712;stroke-miterlimit:4;stroke-dasharray:none"
-       x="59.945751"
-       y="75.062012"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60376px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;letter-spacing:0.0313892px;word-spacing:0px;fill:#2f2e42;fill-opacity:1;stroke:none;stroke-width:0.31399;stroke-miterlimit:4;stroke-dasharray:none"
+       x="63.059307"
+       y="71.680267"
        id="text4824"
-       inkscape:export-filename="D:\Work\GIT\test\docs\images\numgeoACT_logo_small.png"
-       inkscape:export-xdpi="800"
-       inkscape:export-ydpi="800"><tspan
+       inkscape:export-filename="D:\Work\GIT\test\docs\images\numgeoACT_logo_favicon.png"
+       inkscape:export-xdpi="101.43739"
+       inkscape:export-ydpi="101.43739"><tspan
          sodipodi:role="line"
          id="tspan4822"
-         x="59.945751"
-         y="75.062012"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#2f2e42;fill-opacity:1;stroke-width:0.712;stroke-miterlimit:4;stroke-dasharray:none">n</tspan></text>
+         x="63.059307"
+         y="71.680267"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#2f2e42;fill-opacity:1;stroke-width:0.31399;stroke-miterlimit:4;stroke-dasharray:none">n</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,60.205717,68.725989)"
@@ -86,17 +86,17 @@
        style="font-size:14.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;white-space:pre;shape-inside:url(#rect11141)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.4394px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;letter-spacing:0.0711777px;word-spacing:0px;fill:#961c26;fill-opacity:1;stroke:none;stroke-width:0.712;stroke-miterlimit:4;stroke-dasharray:none"
-       x="66.872231"
-       y="75.062012"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60376px;line-height:1.25;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math;letter-spacing:0.0313892px;word-spacing:0px;fill:#961c26;fill-opacity:1;stroke:none;stroke-width:0.31399;stroke-miterlimit:4;stroke-dasharray:none"
+       x="60.410206"
+       y="75.147499"
        id="text30512"
-       inkscape:export-filename="D:\Work\GIT\test\docs\images\numgeoACT_logo_small.png"
-       inkscape:export-xdpi="800"
-       inkscape:export-ydpi="800"><tspan
+       inkscape:export-filename="D:\Work\GIT\test\docs\images\numgeoACT_logo_favicon.png"
+       inkscape:export-xdpi="101.43739"
+       inkscape:export-ydpi="101.43739"><tspan
          sodipodi:role="line"
          id="tspan30510"
-         x="66.872231"
-         y="75.062012"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#961c26;fill-opacity:1;stroke-width:0.712;stroke-miterlimit:4;stroke-dasharray:none">ACT</tspan></text>
+         x="60.410206"
+         y="75.147499"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#961c26;fill-opacity:1;stroke-width:0.31399;stroke-miterlimit:4;stroke-dasharray:none">ACT</tspan></text>
   </g>
 </svg>

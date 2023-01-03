@@ -4,7 +4,7 @@ title: numgeo-ACT
 logo: "/docs/images/numgeoACT_logo_text-2.png"
 
 # Set a path/url to a favicon that will be displayed by the browser
-favicon_ico: "/docs/images/numgeoACT_logo_small.ico"
+favicon_ico: "/docs/images/favicon/favicon.ico"
 
 description: Automatic Calibration Tool (ACT) for advanced constitutive soil models
 
