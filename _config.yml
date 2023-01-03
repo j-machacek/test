@@ -10,6 +10,8 @@ description: Automatic Calibration Tool (ACT) for advanced constitutive soil mod
 
 theme: just-the-docs
 
+source: ./docs/
+
 color_scheme: numgeoACT_light
 
 url: https://j-machacek.github.io/test/
