@@ -4,7 +4,7 @@
     nav_order: 1
     parent: Optimization algorithms
     has_children: true
-    permalink: /docs/mealpy/mealpy
+    permalink: /mealpy/mealpy
     has_toc: false
 ---
 # MEALPY

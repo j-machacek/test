@@ -3,7 +3,7 @@
     title: Optimization algorithms
     nav_order: 3
     has_children: true
-    permalink: /docs/algorithms
+    permalink: /algorithms/algorithms
 ---
 # Optimization algorithms
 

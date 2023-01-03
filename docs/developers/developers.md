@@ -3,7 +3,7 @@
     title: For developers
     nav_order: 99
     has_children: true
-    permalink: /docs/developers
+    permalink: /developers/developers
 ---
 # For developers
 {: .no_toc }
