@@ -111,7 +111,7 @@ In the last step we specify which parameters we want to vary during optimization
 ```python
 to_optimize = \['e0','lambda_c', 'xi', 'M_c', 'M_e', 'm', 'G0', 'nue', 'h0', 'c_h', 'n_b', 'A0', 'n_d'\]
 ```
-We have now successfully set up the SANISAND constitutive model for optimization by one of the implemented optimization algorithms $\rightarrow$ [Optimization algorithms]({% link docs/algorithms/algorithms.md %})
+We have now successfully set up the SANISAND constitutive model for optimization by one of the implemented optimization algorithms $\rightarrow$ [Optimization algorithms]({% link algorithms/algorithms.md %})
 
 ### Estimation of $e_0$, $\phi_c$ and $\lambda_c$ from undrained monotonic triaxial tests
 
