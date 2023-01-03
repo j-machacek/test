@@ -3,6 +3,9 @@ title: numgeo-ACT
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "/docs/images/numgeoACT_logo_text-2.png"
 
+# Set a path/url to a favicon that will be displayed by the browser
+favicon_ico: "/docs/images/numgeoACT_logo_small.ico"
+
 description: Automatic Calibration Tool (ACT) for advanced constitutive soil models
 
 theme: just-the-docs
@@ -35,7 +38,10 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 back_to_top: true
 back_to_top_text: "Back to top"
 
-#aux_links:
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+#aux_links for the upper right navigation:
 #  Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
 # files/directories that should be excluded
