@@ -85,7 +85,7 @@ In the last step we specify which parameters we want to vary during optimization
 ```python
 to_optimize = \['phic','hs','n','alpha','beta','ed','ec'\]
 ```
-We have now successfully set up the hypoplatic constitutive model for optimization by one of the implemented optimization algorithms $\rightarrow$ [Optimization algorithms]({% link /algorithms/algorithms.md %})
+We have now successfully set up the hypoplatic constitutive model for optimization by one of the implemented optimization algorithms $\rightarrow$ [Optimization algorithms]({% link algorithms/algorithms.md %})
 
 ## Constitutive Equations
 
